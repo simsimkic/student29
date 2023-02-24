@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC7AED20-D51C-448A-90BC-C341EB97D786}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>health_clinicClassDiagram</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>health_clinicClassDiagram</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>%25windowsDirectory%25\\Microsoft.NET\\Framework\\v1.0.3705\\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <HintPath>%25windowsDirectory%25\\Microsoft.NET\\Framework\\v1.0.3705\\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>%25windowsDirectory%25\\Microsoft.NET\\Framework\\v1.0.3705\\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <HintPath>%25windowsDirectory%25\\Microsoft.NET\\Framework\\v1.0.3705\\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+      <HintPath>%25windowsDirectory%25\\Microsoft.NET\\Framework\\v1.0.3705\\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <HintPath>%25windowsDirectory%25\\Microsoft.NET\\Framework\\v1.0.3705\\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <HintPath>%25windowsDirectory%25\\Microsoft.NET\\Framework\\v1.0.3705\\System.XML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\AppointmentController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\BlogController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\DecoratedDrugController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\IDoctorController.cs" />
+    <Compile Include="Controller\IEquipmentController.cs" />
+    <Compile Include="Controller\PatientController.cs" />
+    <Compile Include="Controller\SpecialistController.cs" />
+    <Compile Include="Controller\SurgeonController.cs" />
+    <Compile Include="Controller\DoctorController.cs" />
+    <Compile Include="Controller\DoctorDrugController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\DrugController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\EquipmentController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\ExamOperationRoomController.cs" />
+    <Compile Include="Controller\IAppointmentController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\IBlogController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\IController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\IDrugController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\IExamOperationRoomController.cs" />
+    <Compile Include="Controller\IMedicalRecordController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\IRehabilitationRoomController.cs" />
+    <Compile Include="Controller\IRoomController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\ITreatmentController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\IUserController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\ManagerDrugController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\MedicalRecordController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\RehabilitationRoomController.cs" />
+    <Compile Include="Controller\RenovationController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\RoomController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\TreatmentController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\UserController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\WorkingDaysController.cs" />
+    <Compile Include="Controller\WorkingScheduleController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="Model\Appointment\Appointment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Appointment\MedicalRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Appointment\TypeOfAppointment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\Drug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\Equipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\ExamOperationRoom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\Ingredients.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\RehabilitationRoom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\Renovation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\Room.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\TypeOfEquipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\TypeOfRenovation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Rooms\TypeOfRoom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Surveys\Blog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Surveys\DoctorRating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Surveys\Grade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Surveys\Survey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Adress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\City.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Country.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Days.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Doctor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Gender.cs" />
+    <Compile Include="Model\SystemUsers\Manager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Patient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\RegisteredUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Secretary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Specialist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Specialization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\Surgeon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\SurgicalSpecialty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\WorkingDays.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SystemUsers\WorkingSchedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Treatment\DiagnosisAndReview.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Treatment\Prescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Treatment\ReferralToHospitalTreatment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Treatment\ScheduledSurgery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Treatment\SpecialistAppointment.cs" />
+    <Compile Include="Model\Treatment\Treatment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Treatment\Urgency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\AppointmentRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\BlogRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\AppointmentCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\BlogCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\DoctorCSVConverter.cs" />
+    <Compile Include="Repository\Csv\Converter\DrugCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\EquipmentCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\ExamOperationRoomCSVConverter.cs" />
+    <Compile Include="Repository\Csv\Converter\ICSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\MedicalRecordCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\PatientCSVConverter.cs" />
+    <Compile Include="Repository\Csv\Converter\RehabilitationRoomCSVConverter.cs" />
+    <Compile Include="Repository\Csv\Converter\RenovationCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\RoomCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\SpecialistCSVConverter.cs" />
+    <Compile Include="Repository\Csv\Converter\SurgeonCSVConverter.cs" />
+    <Compile Include="Repository\Csv\Converter\TreatmentCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\UserCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Converter\WorkingDaysCSVConverter.cs" />
+    <Compile Include="Repository\Csv\Converter\WorkingScheduleCSVConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Stream\CSVStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Csv\Stream\ICSVStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\DoctorRepository.cs" />
+    <Compile Include="Repository\DrugRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\EquipRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\ExamOperationRoomRepository.cs" />
+    <Compile Include="Repository\IBlogRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\IDiagnosisAndReviewRepository.cs" />
+    <Compile Include="Repository\IPatientRepository.cs" />
+    <Compile Include="Repository\ISpecialistRepository.cs" />
+    <Compile Include="Repository\ISurgeonRepository.cs" />
+    <Compile Include="Repository\IDoctorRepository.cs" />
+    <Compile Include="Repository\IDrugRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\IEquipRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\IExamOperationRoomRepository.cs" />
+    <Compile Include="Repository\IMedicalRecordRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\IPrescriptionRepository.cs" />
+    <Compile Include="Repository\IRehabilitationRoomRepository.cs" />
+    <Compile Include="Repository\IRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\IRoomRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\ITreatmentRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\IUserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\IWorkingScheduleRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\MedicalRecordRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\PatientRepository.cs" />
+    <Compile Include="Repository\RehabilitationRoomRepository.cs" />
+    <Compile Include="Repository\RenovationRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\RoomRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\Sequencer\iSequencer.cs" />
+    <Compile Include="Repository\Sequencer\LongSequencer.cs" />
+    <Compile Include="Repository\SpecialistRepository.cs" />
+    <Compile Include="Repository\SurgeonRepository.cs" />
+    <Compile Include="Repository\TreatmentRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\UserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\WorkingDaysRepository.cs" />
+    <Compile Include="Repository\WorkingScheduleRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\AppointmentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\BlogService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\DecoratedDrugService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\DoctorDrugService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IDoctorService.cs" />
+    <Compile Include="Service\PatientService.cs" />
+    <Compile Include="Service\SpecialistService.cs" />
+    <Compile Include="Service\SurgeonService.cs" />
+    <Compile Include="Service\DoctorService.cs" />
+    <Compile Include="Service\DrugService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\EquipmentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\ExamOperationRoomService.cs" />
+    <Compile Include="Service\IAppointmentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IBlogService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IDrugService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IEquipmentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IExamOperationRoomService.cs" />
+    <Compile Include="Service\IMedicalRecordService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IRehabilitationRoomService.cs" />
+    <Compile Include="Service\IRoomService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\ITreatmentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\IUserService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\ManagerDrugService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\MedicalRecordService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\RehabilitationRoomService.cs" />
+    <Compile Include="Service\RenovationService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\RoomService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\TreatmentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\UserService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service\Util\AppointmentGenerator.cs" />
+    <Compile Include="Service\WorkingDaysService.cs" />
+    <Compile Include="Service\WorkingScheduleService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

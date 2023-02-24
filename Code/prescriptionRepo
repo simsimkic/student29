@@ -1,0 +1,6 @@
+0|Panklav 200mg,20#Aerius 50mg,5#
+0|Panklav 200mg,20#Aerius 50mg,5#
+1|Panklav 200mg,20#Aerius 50mg,5#
+2|Panklav 200mg,20#Aerius 50mg,5#
+
+id|doctorIme,doctorPrezime|fromDate|toDate|drug1,drug2|ssfromDate, sstoDate, sscause, ssSurgeonName, sssurgeonSurname, sssurgeonSpecialty|diagnosis,review|refStartDate,refEndDate,refCause
